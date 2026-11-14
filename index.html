@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalizer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>veriCard</title>
+</head>
+<body>
+    <main class="container">
+        <div class="top">
+            <section class="left">
+                <h1>Verificación de Tarjetas</h1>
+                <p>Validador de tarjetas gratuito para testeo y prueba de algoritmo. Ejecuta el algoritmo de Luhn (Mod-10). Para mas información referente a método matemático, consulta la documentación oficial <a href="https://es.wikipedia.org/wiki/Algoritmo_de_Luhn" target="_blank">Wikipedia</a>.</p>
+                <p>Haga click en los asteristos y escriba los numeros de la tarjeta, se ajustarán solos, finalmente presione el boton de validación.</p>
+            </section>
+            <section class="rieght">
+                <div class="card">
+                    <div class="bankName">MIBanca</div>
+                    <div class="cardNumber">
+                        <input type="text" maxlength="4" id="card-number1" placeholder="****" tabindex="1" oninput="if(this.value.length >= 4 && this.nextElementSibling) this.nextElementSibling.focus();">
+                        <input type="text" maxlength="4" id="card-number2" placeholder="****" tabindex="2" oninput="if(this.value.length >= 4 && this.nextElementSibling) this.nextElementSibling.focus();">
+                        <input type="text" maxlength="4" id="card-number3" placeholder="****" tabindex="3" oninput="if(this.value.length >= 4 && this.nextElementSibling) this.nextElementSibling.focus();">
+                        <input type="text" maxlength="4" id="card-number4" placeholder="****" tabindex="4" oninput="if(this.value.length >= 4 && this.nextElementSibling) this.nextElementSibling.focus();">
+                    </div>
+                    <div class="userName">Pedro Paramo</div>
+                </div>
+            </section> 
+        </div>
+        <div class="down">
+            <section class="bottom">
+                <button id="validate-btn" class="validate-btn">Validar Tarjeta</button>
+                <button id="eraser-btn" class="eraser-btn">X</button>
+                <p id="result" class="result"></p>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="/js/app.js"></script>
+</html>

@@ -1,0 +1,260 @@
+:root{
+    --primary-color:#2e2e2e;
+    --secondary-color:#f0f0f0;
+    --logo-color:#0059cc;
+    --primary-hover-color:#797979;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background-image: url('../assets/fondoApp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin:1rem;
+}
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin:1rem;
+}
+.left{
+    width: 50%;
+    padding: 0.4rem;
+    color:#f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.left h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+
+}
+.left p{
+    font-size: 1rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-align: justify;
+}
+.left a{
+    display: inline-block;
+    color:var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.left a:hover{
+    transition: color 0.3s ease;
+    color: var(--primary-hover-color);
+}
+.rieght{
+    width: 50%;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.card{
+    width: 20.24rem;
+    height: 12.86rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(1rem); 
+    -webkit-backdrop-filter: blur(0.8rem); /* Soporte para Safari */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde brillante simulando reflejo */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Espaciado interno básico */
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-evenly;
+    align-content: center;
+}
+.banckName{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;  
+    color: var(--primary-color);
+    text-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.6);
+}
+.cardNumber{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3rem;
+    font-weight: 700;
+    color:var(--primary-color);
+}   
+.cardNumber input{
+    letter-spacing: 0.2rem;
+    width: 20%;
+    text-align: center;
+    line-height: 1.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.cardNumber input::placeholder{
+    font-size: 1rem;
+    font-weight: bolder;
+    color:var(--primary-color);
+}
+.validate-btn{
+    font-size: 1rem;
+    font-weight: boder;
+    padding: 0.4rem;
+    border-top-left-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+}
+/* PARTE MOVILE */
+@media (width >= 300px) and (width <= 800px){
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin:1rem;
+    }
+    .down{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin:1rem;
+    }
+    .left{
+        width: 50%;
+        padding: 0.4rem;
+        color:#f0f0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .left h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+
+    }
+    .left p{
+        font-size: 1rem;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        text-align: justify;
+    }
+    .left a{
+        display: inline-block;
+        color:var(--secondary-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .left a:hover{
+        transition: color 0.3s ease;
+        color: var(--primary-hover-color);
+    }
+    .rieght{
+        width: 50%;
+        padding: 0.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .card{
+        width: 20.24rem;
+        height: 12.86rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.2); 
+        backdrop-filter: blur(1rem); 
+        -webkit-backdrop-filter: blur(0.8rem); /* Soporte para Safari */
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Borde brillante simulando reflejo */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        /* Espaciado interno básico */
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-evenly;
+        align-content: center;
+    }
+    .banckName{
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: right;  
+        color: var(--primary-color);
+        text-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.6);
+    }
+    .cardNumber{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 3rem;
+        font-weight: 700;
+        color:var(--primary-color);
+    }   
+    .cardNumber input{
+        letter-spacing: 0.2rem;
+        width: 20%;
+        text-align: center;
+        line-height: 1.2rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .cardNumber input::placeholder{
+        font-size: 1rem;
+        font-weight: bolder;
+        color:var(--primary-color);
+    }
+    .validate-btn{
+        font-size: 1rem;
+        font-weight: boder;
+        padding: 0.4rem;
+        border-top-left-radius: 0.9rem;
+        border-bottom-left-radius: 0.9rem;
+    }
+}
+/* 
+8.5 x 5.4 cm
+0.42cm --> 1 rem
+8.5 cm --> 20.24 rem
+5.4 cm --> 12.86 rem
+*/
